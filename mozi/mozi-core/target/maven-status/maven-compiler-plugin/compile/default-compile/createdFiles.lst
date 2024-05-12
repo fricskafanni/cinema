@@ -1,0 +1,13 @@
+hu\alkfejl\dao\FoglalasDAOImpl.class
+hu\alkfejl\dao\FilmDAO.class
+hu\alkfejl\dao\FilmDAOImpl.class
+hu\alkfejl\dao\FoglalasDAO.class
+hu\alkfejl\dao\VetitesDAO.class
+hu\alkfejl\dao\TeremDAO.class
+hu\alkfejl\model\Terem.class
+hu\alkfejl\dao\TeremDAOImpl.class
+hu\alkfejl\config\FilmConfig.class
+hu\alkfejl\model\Film.class
+hu\alkfejl\dao\VetitesDAOImpl.class
+hu\alkfejl\model\Foglalas.class
+hu\alkfejl\model\Vetites.class

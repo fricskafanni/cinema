@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.controller.TeremModositController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="605.0" GridPane.columnSpan="2">
+         <children>
+            <Label prefHeight="37.0" prefWidth="261.0" text="Terem módosítása" textFill="#a32929">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets left="30.0" />
+               </StackPane.margin>
+            </Label>
+         </children></StackPane>
+      <Label text="Terem sorainak száma:" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin></Label>
+      <Label text="Terem oszlopainak száma:" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin></Label>
+      <TextField fx:id="sorok_szama" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="oszlopok_szama" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onSave" text="Mentés" />
+            <Button mnemonicParsing="false" onAction="#onCancel" text="Vissza" />
+         </children>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="350.0" minWidth="6.66668701171875" percentWidth="30.0" prefWidth="168.66667683919272" />
+      <ColumnConstraints maxWidth="493.33331298828125" minWidth="74.66666666666669" percentWidth="30.0" prefWidth="92.99995930989584" />
+      <ColumnConstraints fx:id="actionColumn" maxWidth="493.33331298828125" minWidth="250.66666666666674" prefWidth="338.6667073567708" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="145.33331298828125" minHeight="42.0" prefHeight="48.0" />
+      <RowConstraints maxHeight="112.66669464111328" minHeight="10.0" prefHeight="57.33332316080728" />
+      <RowConstraints maxHeight="89.33334350585938" minHeight="10.0" prefHeight="79.33334350585938" />
+      <RowConstraints maxHeight="89.33334350585938" minHeight="10.0" prefHeight="79.33334350585938" />
+   </rowConstraints>
+</GridPane>
